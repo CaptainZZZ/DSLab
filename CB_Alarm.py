@@ -4,7 +4,7 @@ from smtplib import SMTP_SSL
 
 def sendemail(addrs):
 	server=SMTP_SSL('smtp.gmail.com',465)
-	server.login('dsimakovlab@gmail.com','$RFV5tgb')
+	server.login('dsimakovlab@gmail.com','password')
 	msg=('CB Alarm')
 	server.sendmail('dsimakovlab@gmail.com',addrs,msg)
 	server.quit()
